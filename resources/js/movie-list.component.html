@@ -1,4 +1,4 @@
-<table>
+<table class="table table-sm table-striped table-bordered">
   <tr>
     <th>Title</th>
     <th>Length</th>
@@ -13,8 +13,10 @@
       <movie-rating value="movie.rating"></movie-rating>
     </td>
     <td>
-      <button ng-click="model.upRating(movie)">+</button>
-      <button ng-click="model.downRating(movie)">-</button>
+      <div class="btn-group">
+        <button class="btn btn-sm btn-default" ng-click="model.upRating(movie)">+</button>
+        <button class="btn btn-sm btn-secondary" ng-click="model.downRating(movie)">-</button>
+      </div>
     </td>
   </tr>
 </table>

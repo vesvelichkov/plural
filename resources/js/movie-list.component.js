@@ -23,7 +23,6 @@
     };
 
     model.upRating = function(movie) {
-      console.log(movie);
       if(movie.rating < 5) {
         movie.rating ++;
       }
